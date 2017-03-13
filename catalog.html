@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!--Шапка-->
+
+      <header class="page-header">
+        <div class="page-header__logo">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Мишка">
+        </div>
+        <nav class="main-nav main-nav--closed">
+          <input class="main-nav__toggle" type="button" name="button" value="Открыть меню">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item search"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item basket"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--Основной контент-->
+
+      <main>
+
+        <section class="main-header">
+          <h1 class="main-header__title">Каталог товаров</h1>
+        </section>
+
+        <section class="goods">
+          <ul class="goods__list">
+            <li class="goods__item">
+              <div class="catalog-description">
+                <img class="catalog-description__image" src="http://placehold.it/150x100" width="150" height="100" alt="Корзинка для игрушек">
+                <h2 class="catalog-description__title title-h2">Зайчик-попрыгайчик</h2>
+                <p class="catalog-description__parameter">Рост 30 см, вес 200 г</p>
+                <div class="catalog-description__line"></div>
+                <p class="catalog-description__price">1 200 руб.</p>
+              </div>
+            </li>
+            <li class="goods__item">
+              <div class="catalog-description">
+                <img class="catalog-description__image" src="http://placehold.it/150x100" width="150" height="100" alt="Корзинка для белья">
+                <h2 class="catalog-description__title title-h2">Корзинка для белья</h2>
+                <p class="catalog-description__parameter">Диаметр 15 см, высота 10 см</p>
+                <div class="catalog-description__line"></div>
+                <p class="catalog-description__price">690 руб.</p>
+              </div>
+            </li>
+            <li class="goods__item">
+              <div class="catalog-description">
+                <img class="catalog-description__image" src="http://placehold.it/150x100" width="150" height="100" alt="Большая корзинка для игрушек">
+                <h2 class="catalog-description__title title-h2">Большая корзинка для игрушек</h2>
+                <p class="catalog-description__parameter">Диаметр 30 см, высота 30 см</p>
+                <div class="catalog-description__line"></div>
+                <p class="catalog-description__price">1 500 руб.</p>
+              </div>
+            </li>
+            <li class="goods__item">
+              <div class="catalog-description video">
+                <h2 class="catalog-description__title video__title title-h2">Процесс производства</h2>
+                <img class="catalog-description__image video__image" src="http://placehold.it/150x100" width="150" height="100" alt="Процесс производства">
+                <p class="video__depiction text-depiction">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+                <a class="btn" href="#">Сделать заказ</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </main>
+
+      <!--Подвал-->
+
+      <footer class="page-footer">
+        <div class="social">
+          <a class="social__link" href="#">Инстаграм</a>
+          <a class="social__link" href="#">Фейсбук</a>
+          <a class="social__link" href="#">Твиттер</a>
+        </div>
+        <div class="page-footer__line"></div>
+        <div class="page-footer__copyright">
+          <p class="page-footer__title">Разработано</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/"></a>
+        </div>
+      </footer>
+
+      <!--Попап-->
+
+      <div class="popap">
+        <h2 class="popap__title">Добавить в корзину</h2>
+        <p class="popap__text">Выберите размер:</p>
+        <form action="https://echo.htmlacademy.ru">
+          <label class="popap__size">
+            <input type="radio" name="size-s" checked>
+            S
+          </label>
+          <label class="popap__size">
+            <input type="radio" name="size-m">
+            M
+          </label>
+          <label class="popap__size">
+            <input type="radio" name="size-l">
+            L
+          </label>
+          <input class="btn-popap btn-popap--color" type="submit" value="Добавить">
+        </form>
+      </div>
+
+    </div>
+
+  </body>
+  </html>
