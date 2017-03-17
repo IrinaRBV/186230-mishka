@@ -1,0 +1,19 @@
+@import "./variables";
+@import "../common";
+
+label {
+  color: #000;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.form {
+  border: 2px solid red;
+}
+
+.text-placeholder {
+  color: #444;
+  font-size: 17px;
+  font-weight: regular;
+}
+

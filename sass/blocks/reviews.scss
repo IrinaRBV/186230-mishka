@@ -1,0 +1,27 @@
+@import "./variables";
+@import "../common";
+
+.reviews {
+  border: 2px solid red;
+  margin-top: 35px;
+  padding: 0 30px 0 30px;
+
+  &__items {
+    width: 260px;
+  }
+  &__item {
+    margin: 0;
+    padding: 0;
+  }
+  &__author-name{
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &__author-email {
+    font-family: $font-family;
+    font-size: 17px;
+    font-weight: regular;
+    font-style: normal;
+  }
+}

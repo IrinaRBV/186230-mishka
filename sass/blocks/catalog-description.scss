@@ -1,0 +1,20 @@
+@import "./variables";
+@import "../common";
+
+.catalog-description {
+  border: 2px solid red;
+
+  &__parameter {
+    font-size: 13px;
+    font-weight: regular;
+    color: #444;
+  }
+  &__line {
+
+  }
+  &__price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+  }
+}

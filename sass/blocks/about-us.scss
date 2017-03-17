@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./common";
+
+.about-us {
+  border: 2px solid red;
+  margin-top: 35px;
+  padding: 0 30px 0 30px;
+
+  &__list {
+    margin: 10px 0 0 -37px;
+  }
+  &__item {
+    padding-top: 25px;
+    list-style: none;
+  }
+  &__text{
+    font-family: $font-family;
+    font-size: 17px;
+    font-weight: bold;
+  }
+}

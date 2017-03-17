@@ -1,0 +1,24 @@
+@import "./variables";
+@import "../common";
+
+.contacts {
+  border: 2px solid red;
+  margin-top: 35px;
+  padding: 0 30px 0 30px;
+
+  &__items {
+    width: 260px;
+    margin-bottom: 35px;
+    @extend .text-depiction;
+  }
+  td {
+    vertical-align: top;
+    padding: 10px 25px 0 0;
+    line-height: 35px;
+  }
+}
+
+.h2--small {
+  font-size: 18px;
+  font-weight: bold;
+}
