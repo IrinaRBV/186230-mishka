@@ -1,5 +1,5 @@
 @import "./variables";
-@import "../common";
+@import "./common";
 
 .reviews {
   border: 2px solid red;
@@ -14,14 +14,11 @@
     padding: 0;
   }
   &__author-name{
-    font-family: $font-family;
     font-size: 18px;
     font-weight: bold;
   }
   &__author-email {
-    font-family: $font-family;
     font-size: 17px;
-    font-weight: regular;
     font-style: normal;
   }
 }

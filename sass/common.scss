@@ -2,10 +2,8 @@
 
 
 h2 {
-  font-family: $font-family;
   font-size: 25px;
   font-weight: bold;
-  color: #000000;
 }
 
 .keyword-h2 {
@@ -16,7 +14,6 @@ h2 {
 .title-h2 {
   font-size: 17px;
   font-weight: bold;
-  color: #000;
 }
 svg {
   fill: #63d1bb;
@@ -27,14 +24,12 @@ svg {
 }
 
 .text-depiction {
-  font-family: $font-family;
   font-size: 15px;
   color: #444444;
-  font-weight: regular;
 }
 
 .btn {
-  font-family: $font-family;
+  display: inline-block;
   padding: 20px 85px 20px 85px;
   text-transform: uppercase;
   text-decoration: none;
@@ -45,4 +40,3 @@ svg {
   text-align: center;
   border: 2px solid #444444;
 }
-

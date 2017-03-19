@@ -1,5 +1,4 @@
 @import "./variables";
-@import "../common";
 
 .contacts {
   border: 2px solid red;
@@ -9,7 +8,8 @@
   &__items {
     width: 260px;
     margin-bottom: 35px;
-    @extend .text-depiction;
+    font-size: 15px;
+    color: #444444;
   }
   td {
     vertical-align: top;

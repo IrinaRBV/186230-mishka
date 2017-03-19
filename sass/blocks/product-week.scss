@@ -1,5 +1,4 @@
 @import "./variables";
-@import "./common";
 
 .product-week {
   border: 2px solid red;
@@ -20,13 +19,13 @@
     font-size: 17px;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: $font-family;
   }
   &__depiction {
     width: 250px;
   }
   &__items td{
-    @extend .text-depiction;
+    font-size: 15px;
+    color: #444444;
     border-collapse: collapse;
     border-bottom: 1px solid #ececec;
     padding:10px 30px 10px 0;
