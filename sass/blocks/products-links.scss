@@ -1,0 +1,28 @@
+.products-links{
+  border: 2px solid red;
+  margin: -75px  0 0 0;
+
+  &__item {
+    position: relative;
+    height: 105px;
+    background: #63d1bb;
+  }
+  &__item svg {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    fill: #231F20;
+    opacity: 0.3;
+  }
+  &__title {
+    margin: 0;
+    padding: 30px 40px 30px 30px;
+    width: 130px;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  &__item--color {
+    background: #56c3b2;
+  }
+}

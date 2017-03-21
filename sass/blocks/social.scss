@@ -1,0 +1,11 @@
+@import "./variables";
+@import "../common";
+
+.social {
+  margin: 25px 0 25px 0;
+
+  &__link {
+    font-size: 0;
+    padding-left: 30px;
+  }
+}

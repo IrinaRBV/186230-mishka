@@ -1,0 +1,23 @@
+@import "./variables";
+@import "../common";
+
+.page-footer {
+  border: 2px solid red;
+  margin-top: 35px;
+  padding: 0 30px 0 30px;
+  background: #f1f1f1;
+
+  &__title {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.page-footer__copyright {
+
+  svg {
+    float: right;
+  }
+}
