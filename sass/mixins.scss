@@ -1,7 +1,21 @@
+@import "./variables";
+
 @mixin clearfix() {
   &::after {
   display: table;
   content: "";
   clear: both;
+  }
+}
+
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 960px;
   }
 }

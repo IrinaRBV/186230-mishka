@@ -1,7 +1,9 @@
 @import "./variables";
+@import "./mixins";
 
 .main-header {
   border: 2px solid red;
+
 
   &--color {
   height: 177px;
@@ -9,10 +11,9 @@
   }
   &--img {
     display: block;
-    width: 575px;
     height: 373px;
     margin: 0 auto 0 auto;
-    background: url(../../img/hero-mobile@1x.jpg);
+    background: url(../../img/hero-mobile@1x.jpg) no-repeat;
   }
   &__title {
     width: 260px;
@@ -20,5 +21,27 @@
     font-size: 27px;
     font-weight: bold;
     text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .main-header {
+
+  }
+
+  &--img {
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .main-header {
+
+  }
+
+  &--img {
+
   }
 }

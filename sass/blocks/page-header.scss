@@ -1,11 +1,45 @@
+@import "./mixins";
+@import "./variables";
+
 .page-header {
+  min-height: 90px;
   border: 2px solid red;
 }
 
 .page-header__logo {
+  border: 2px solid green;
+  width: 105px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
 .page-header__logo svg {
   fill: #000000;
+}
+
+@media (min-width: $tablet-width) {
+
+  .page-header {
+
+  }
+
+  .page-header__logo {
+    float: left;
+    margin-right: 200px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-header {
+
+  }
+
+  .page-header__logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
