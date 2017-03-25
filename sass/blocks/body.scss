@@ -1,7 +1,9 @@
 @import "./variables";
+@import "./mixins";
 
 .body {
-  font-family: $font-family;
+  @include font-face;
+  @include font-face-bold;
   color: #000;
 }
 

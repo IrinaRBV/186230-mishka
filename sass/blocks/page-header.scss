@@ -2,44 +2,51 @@
 @import "./variables";
 
 .page-header {
-  min-height: 90px;
+  position: relative;
+  min-height: 80px;
   border: 2px solid red;
-}
 
-.page-header__logo {
-  border: 2px solid green;
-  width: 105px;
-  height: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 
-.page-header__logo svg {
-  fill: #000000;
+  &__logo {
+    border: 2px solid green;
+    width: 105px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  &__logo svg {
+    margin: 20px 10px 20px 10px;
+    fill: #000000;
+  }
 }
 
 @media (min-width: $tablet-width) {
 
   .page-header {
+    display: flex;
+    justify-content: space-around;
+    min-height: 90px;
 
-  }
 
-  .page-header__logo {
-    float: left;
-    margin-right: 200px;
-    margin-left: 50px;
+    &__logo {
+      /*margin-right: 200px;
+      margin-left: 50px;*/
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
 
   .page-header {
+    min-height: 90px;
 
-  }
 
-  .page-header__logo {
-    margin-left: auto;
-    margin-right: auto;
+    &__logo {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

@@ -1,6 +1,135 @@
 @import "./mixins";
 @import "./variables";
 
+
 .main-nav {
-  display: none;
+  position: relative;
+  width: 320px;
+  background-color: #fff;
+
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+  }
+  &__item {
+    position: relative;
+    padding: 30px 20px 30px 20px;
+    list-style: none;
+    border-top: 1px solid #ececec;
+  }
+  &__item a {
+    display: block;
+    padding: 0 0 0 60px;
+    text-decoration: none;
+    color: #000;
+  }
+  &__item--search {
+    position: relative;
+  }
+  &__item--search:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 32px;
+    left: 30px;
+    opacity: 0.2;
+    background: url(../../img/icon-search.svg) no-repeat;
+  }
+  &__item--basket {
+    position: relative;
+  }
+  &__item--basket:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 32px;
+    left: 30px;
+    opacity: 0.2;
+    background: url(../../img/icon-cart.svg) no-repeat;
+  }
 }
+
+.main-nav--closed .main-nav__btn {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: -50px;
+  right: 30px;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+  text-indent: 20px;
+  background: url(../../img/icon-menu-open.svg) no-repeat;
+  z-index: 10;
+}
+
+.main-nav--opened .main-nav__btn {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: -50px;
+  right: 30px;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+  text-indent: 20px;
+  background: url(../../img/icon-menu-close.svg) no-repeat;
+  z-index: 10;
+}
+
+.delivery {
+  font-size: 0px;
+  color: #444;
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__user-item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__btn {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: static;
+    height: auto;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+}
+
+/*
+@media (min-width: $tablet-width) {
+
+
+
+
+}
+
+  .delivery {
+  font-size: 15px;
+  color: #444;
+}
+}
+
+@media (min-width: $desktop-width) {
+
+}
+
+*/
